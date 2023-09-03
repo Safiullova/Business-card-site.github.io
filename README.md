@@ -2,15 +2,18 @@
 ### Demo
 на [GitHub Pages](https://3girls-team.github.io/)
  
-При создании этого проекта:
-Разработка дизайна в Figma (@github/ViktoriyaLu)
-адаптивная верстка (флексбокс, медиа-запросы).
+### При создании этого проекта:
+- разработан дизайн в Figma @ViktoriyaLu [Ссылка на макет](https://3girls-team.github.io/)
+- работа в команде по методологии Agile;
+- осуществлена адаптивная кроссбраузерная верстка (флексбокс, медиа-запросы);
+- отработаны навыки работы с препроцессорами (SCSS);
+- контроль версий в git.
 
 ![image](/assets/images/README.png)
 
 ### Технологии и инструменты
 * Agile
-* JavaScript
 * HTML5
 * SASS, CSS3
+* JavaScript
 * GitHub
