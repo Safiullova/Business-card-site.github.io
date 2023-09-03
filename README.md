@@ -3,7 +3,7 @@
 на [GitHub Pages](https://3girls-team.github.io/)
  
 При создании этого проекта:
-Разработка дизайна в Figma [![Contributors] (https://github.com/ViktoriyaLu)
+Разработка дизайна в Figma (@github/ViktoriyaLu)
 адаптивная верстка (флексбокс, медиа-запросы).
 
 ![image](/assets/images/README.png)
