@@ -1,14 +1,13 @@
 # Сайт-визитка психолога
-### Demo
-на [GitHub Pages](https://pinkpink-flamingo.github.io/)
- 
+### Demo версия на [GitHub Pages](https://pinkpink-flamingo.github.io/)
+
 ### При создании этого проекта:
-- разработан дизайн в Figma (@ViktoriyaLu) [Ссылка на макет](https://3girls-team.github.io/)
+- дизайн разработан  [Викторией](https://github.com/ViktoriyaLu) в Figma [Ссылка на макет](https://3girls-team.github.io/)
 - работа в команде по методологии Agile;
-- осуществлена адаптивная кроссбраузерная верстка (флексбокс, медиа-запросы);
 - отработаны навыки работы с препроцессорами (SCSS);
 - контроль версий в git.
-
+- реализовано: адаптивная кроссбраузерная верстка, красивая анимация, переходы на другие рксурсы для прослушивания подкастов, кликабельные контакты, адаптивное меню, слайдер отзывов (JS)
+  
 ![image](/assets/images/README.png)
 
 ### Технологии и инструменты
@@ -17,3 +16,6 @@
 * SASS, CSS3
 * JavaScript
 * GitHub
+  
+### Проектная команда
+[![Contributors](https://contrib.rocks/image?repo=PinkPink-flamingo/Project_2)](https://github.com/PinkPink-flamingo/Project_2/graphs/contributors)
