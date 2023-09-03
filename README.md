@@ -17,5 +17,5 @@
 * JavaScript
 * GitHub
   
-### Проектная команда
+### В проекте принимали участие
 [![Contributors](https://contrib.rocks/image?repo=PinkPink-flamingo/Project_2)](https://github.com/PinkPink-flamingo/Project_2/graphs/contributors)
