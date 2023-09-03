@@ -1,0 +1,70 @@
+// mixin для заголовков секций
+@mixin font-section-title {
+    font-family: 'Moniqa-SemiBoldParagraph';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 42px;
+    color: $white-color;
+
+    @media screen and (max-width: 730px) {
+        font-size: 30px;
+        line-height: 32px;
+        margin-bottom: 43px;
+    }
+
+    @media screen and (max-width: 410px) {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 23px;
+    }
+}
+
+// mixin для цитат
+@mixin font-citation {
+    font-family: 'BadScript-Regular';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: right;
+    color: $pink-color;
+
+    @media screen and (max-width: 730px) {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    @media screen and (max-width: 410px) {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+// mixin для кнопок
+@mixin button {
+    width: 273px;
+    height: 92px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: $pink-color;
+    font-family: 'Moniqa-LightParagraph';
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 42px;
+    color: $white-color;
+    transition: all .5s ease 0s;
+
+    &:hover {
+        opacity: .85;
+        transition: all 1s ease 0s;
+    }
+
+    @media screen and (max-width: 580px) {
+        font-size: 30px;
+    }
+}
+
+//Чтобы воспользоваться @mixin - пишем @include "название миксина";

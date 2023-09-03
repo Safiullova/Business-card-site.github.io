@@ -1,0 +1,368 @@
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  &__li {
+    list-style-type: none;
+    text-decoration: none;
+    // padding: 0.2em 1.2em 0.2em 1.2em;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    width: fit-content;
+
+  }
+
+  &__li-a {
+    text-decoration: none;
+    color: $white-color;
+    list-style: none;
+
+  }
+
+  &__li:hover {
+    background-color: $pink-color;
+    list-style: none;
+    text-decoration: none;
+  }
+}
+
+.about__wrap-main {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.about {
+
+  &__text {
+    grid-template-areas: 1/2/1/2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+
+  &__text-title {
+    font-family: "Moniqa-MediumHeading";
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 100px;
+    color: $pink-color;
+    // margin: .60em 0;
+  }
+
+  &__text-prof {
+    font-family: 'Manrope-Light';
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+  }
+
+  &__text-passage {
+    margin-left: -4%;
+    font-family: 'BadScript-Regular';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    color: $white-color;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  &__text-passage-i {
+    color: $pink-color;
+  }
+
+  &__photo {
+    grid-column: 2;
+    background-image: url(/assets/images/about.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+}
+
+#burger {
+  display: none;
+}
+
+.about__wrap-button {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about__button-button {
+  @include button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__button-terms {
+  margin-top: 10px;
+  position: absolute;
+  max-width: 1000px;
+  background-color: $grey-color;
+  border-radius: 40px;
+  border: none;
+  transition: .8s;
+  padding: 25px;
+  opacity: 0;
+  z-index: 5;
+
+  &-text {
+    font-family: 'Manrope-SemiBold';
+    font-size: 14px;
+    line-height: 16px;
+    color: $bg-color;
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+}
+
+#check_label-about {
+  display: none;
+
+  &:checked~.about__button-terms {
+    display: block;
+    height: auto;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about__wrap-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .about__text-title {
+    font-size: 64px;
+    line-height: 72px;
+    margin-top: 20%;
+  }
+
+  .about__text-prof {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .about__text-passage {
+    margin-top: 20%;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 60px;
+  }
+
+}
+
+.about__photo {
+  grid-column: 2;
+  background-position: -150px 0;
+
+}
+
+@media screen and (max-width: 834px) {
+  [for='burger'] {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    right: 10px;
+    top: 30px;
+  }
+
+  [for='burger']:before {
+    content: '☰';
+    color: $pink-color;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    right: 75%;
+    top: 0;
+    margin-top: 30px;
+    width: 20%;
+    user-select: none;
+  }
+
+  .header-menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+  }
+
+
+  #burger:checked+label+nav {
+    display: block;
+  }
+
+  #burger:checked+[for='burger']::before {
+    content: '✕';
+  }
+
+  .about__wrap-main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    // margin-top: 10%;
+    margin-right: none;
+  }
+
+  .about__text-title {
+    font-size: 48px;
+    line-height: 50px;
+    margin-top: 80%;
+
+  }
+
+  .about__text-prof {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .about__text-passage {
+    margin-top: 20%;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 28px;
+    // margin-bottom: 70%;
+    margin-top: 50%;
+  }
+
+  .about__photo {
+    grid-column: 2;
+    background-position: -160px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .about__wrap-main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-image: url(/assets/images/about.png);
+    background-repeat: no-repeat;
+    background-position: -90px 0;
+  }
+
+  .about__text {
+    margin-top: 50%;
+  }
+
+  .about__text-title {
+    font-size: 48px;
+    line-height: 50px;
+
+  }
+
+  .about__text-prof {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .about__text-passage {
+    margin-top: 5%;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 5%;
+
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  [for='burger'] {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 30px;
+    right: 20px;
+    top: 30px;
+  }
+
+  .header-menu__li {
+    position: relative;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+    transition: all 1s;
+
+  }
+
+  nav {
+    display: none;
+
+    right: 75%;
+    margin-top: 30px;
+    user-select: none;
+  }
+
+  .about__wrap-main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-image: url(/assets/images/about1.png);
+    background-repeat: no-repeat;
+    background-position: -120px 0;
+  }
+
+  .about__text {
+    margin-top: 40%;
+  }
+
+  .about__text-title {
+    font-size: 48px;
+    line-height: 50px;
+
+  }
+
+  .about__text-prof {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .about__text-passage {
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 5%;
+  }
+
+}
+
+@media screen and (max-width: 572px) {
+  .about__button {
+    margin-top: 40px;
+
+    &-button {
+      font-size: 30px;
+    }
+  }
+
+  .about__button-terms-text {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
